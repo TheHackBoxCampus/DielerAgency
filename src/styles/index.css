@@ -1,0 +1,36 @@
+/*css styles*/
+@import url("./variables.css");
+
+/* tailwind styles */ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** base styles **/
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--white);
+  font-family: var(--font);
+}
+
+body::-webkit-scrollbar{ 
+  background: #110129; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1c0342;
+  border-radius: 1em;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color); 
+}
+
+.cursive { 
+  font-family: var(--font-cursive);
+}

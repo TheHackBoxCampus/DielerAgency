@@ -1,0 +1,15 @@
+.cta { 
+    padding: 10px; 
+    color: #000; 
+    background: #EED023; 
+    font-weight: bold;
+    border-radius: 10px; 
+    font-size: 1.3em;
+    transition: 300ms ease; 
+    z-index: 10;
+}
+
+
+.cta:hover { 
+    opacity: .5;
+}

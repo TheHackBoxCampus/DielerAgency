@@ -1,0 +1,15 @@
+.convertion { 
+    padding: .4em; 
+    background: transparent; 
+    border: 3px solid #EED023;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.convertion::placeholder {
+    text-align: center;
+    font-size: 1em;
+    color: #fff
+}
