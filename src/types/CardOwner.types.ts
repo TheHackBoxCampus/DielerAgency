@@ -6,6 +6,4 @@ type CardOwnerSubheadline = {
   end: string;
 };
 
-
-
 export { CardOwnerDescription, CardOwnerSubheadline}
