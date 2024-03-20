@@ -6,10 +6,12 @@
     border-radius: 10px;
     outline: none;
     text-align: center;
+    width: 100%;
+    font-size: 13px;
 }
 
 .convertion::placeholder {
     text-align: center;
-    font-size: 1em;
+    font-size: 15px;
     color: #fff
 }

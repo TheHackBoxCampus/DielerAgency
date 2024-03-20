@@ -4,9 +4,11 @@
     background: #EED023; 
     font-weight: bold;
     border-radius: 10px; 
-    font-size: 1.3em;
     transition: 300ms ease; 
     z-index: 10;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
 }
 
 

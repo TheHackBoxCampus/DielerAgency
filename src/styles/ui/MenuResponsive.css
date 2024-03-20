@@ -1,0 +1,14 @@
+.menu {
+  transition: 300ms ease;
+  animation: rightMove 1s forwards;
+}
+
+@keyframes rightMove {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
