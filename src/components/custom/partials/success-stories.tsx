@@ -6,43 +6,46 @@ import { RN } from "../../../types/FunctionalComponent.type";
 const SuccessInformationThatConverts = (): RN => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-5">
-      <p className="text-5xl"> ⭐⭐⭐⭐⭐</p>
-      <h3 className="text-4xl w-1/2 text-center font-bold">¡QUE OPINAN LAS PERSONAS DE NUESTRO TRABAJO!</h3>
-      <span className="cursive text-3xl">puedes verlo tu mismo</span>
+      <p className="xs:text-3xl sm:text-4xl md:text-5xl"> ⭐⭐⭐⭐⭐</p>
+      <h3 className="xs:text-2xl sm:text-3xl md:text-4xl text-center font-bold">
+        ¡QUE OPINAN LAS PERSONAS DE NUESTRO TRABAJO!
+      </h3>
+      <span className="cursive xs:text-2xl sm:text-3xl ">
+        puedes verlo tu mismo
+      </span>
     </div>
   );
 };
 
 const CardsClients = (): RN => {
   return (
-    <div className="w-full grid grid-cols-3 gap-10 mt-10">
+    <div className="w-full grid md:grid-cols-1 mdx:grid-cols-2 3xl:grid-cols-3 gap-10 mt-10">
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-[250px] sm:w-[400px] smh-[250px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center ">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👨🏻</span>
 
           <div id="client-info">
-            <span className="text-2xl">Maria Rodriguez</span>
+            <span className="text-2xl">Anderson Murillo</span>
             <hr color="" />
-            <p>Emprendedora</p>
+            <p>Cadena de carniserias</p>
           </div>
         </div>
         <div id="testimony">
           <span>
-            “Gracias a la asesoría que me brindaron pude cambiar el enfoque de
-            mi negocio y hacer lo que realmente me gusta, muy buen
-            acompañamiento en todo el proceso”
+            “Muy cumplidos con el trabajo, siempre han sido muy responsables y
+            comprometidos, super recomendados”
           </span>
         </div>
       </div>
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-auto sm:w-[400px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👩🏻‍🦰</span>
           <div id="client-info">
             <span className="text-2xl">Leidy Johana</span>
             <hr color="#000" />
@@ -50,93 +53,94 @@ const CardsClients = (): RN => {
           </div>
         </div>
         <div id="testimony">
-          <span>
-            “Fueron los responsables de que mi empresa siempre tuviera un
-            enfoque humanizar mi marca y que las redes sociales nos dieran el
-            crecimiento que tenemos a día de hoy”
+          <span className="text-sm">
+            “Fueron los responsables de crecer mis redes desde 0, siempre los
+            clientes me decían qué cuál era la pagina de mi negocio y no tenía
+            ni idea de como funcionaba y no disponía del tiempo y pues ellos se
+            comprometieron a encargarse de todo el proceso y a día de hoy sigo
+            muy contenta con los resultados”
           </span>
         </div>
       </div>
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-[250px] sm:w-[400px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👨🏻</span>
           <div id="client-info">
-            <span className="text-2xl">Carlos Ortiz</span>
+            <span className="text-2xl">Serafin Santos</span>
             <hr color="#000" />
-            <p>Comerciante Herboterapia</p>
+            <p>Firma de abogados</p>
           </div>
         </div>
         <div id="testimony">
           <span>
-            "Con miles de problemas en la venta de mi producto, buscaba
-            optimizar mis redes sociales sin éxito. Gracias a las landing page,
-            mi negocio tomó un nuevo rumbo y ahora la venta de mi producto ya no
-            es un problema."
+            “Tenia mis dudas porque nunca había tratado temas de marketing y
+            menos para mi negocio pero cuando accedí fue un cambio, tuve
+            resultados y no perdí mi dinero, que era el miedo que tenia en ese
+            momento”
           </span>
         </div>
       </div>
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-[250px] sm:w-[400px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👨🏻</span>
           <div id="client-info">
-            <span className="text-2xl">Javier Hernandez</span>
+            <span className="text-2xl">Édison Giovanny</span>
             <hr color="#000" />
             <p>Dueño de restaurante</p>
           </div>
         </div>
         <div id="testimony" className="flex items-center">
           <span>
-            “Tenía problemas en la creación y estrategia de mi contenido para
-            mis redes sociales, gracias a sus servicios incrementó la calidad de
-            mi contenido de manera profesional e interacción con mi comunidad”
+            “Fue un antes y un después para mi negocio, pase de tener 0
+            presencia en redes a tener una marca muy atractiva y darle ese toque
+            que le hacia falta a mi restaurante”
           </span>
         </div>
       </div>
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-[250px] sm:w-[400px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👩🏻‍🦰</span>
           <div id="client-info">
             <span className="text-2xl">Daniela Vargas</span>
             <hr color="#000" />
-            <p>Estilista</p>
+            <p>Dueña de salon de belleza</p>
           </div>
         </div>
         <div id="testimony" className="flex items-center">
           <span>
-            “Estoy súper agradecida con sus servicios ya que pude optimizar,
-            mejorar la calidad en la creación de contenido para mis redes y así
-            pude conseguir más clientes calificados para mi negocio. Se los
-            recomiendo si necesitas mejorar tu presencia en redes”
+            "Estoy muy agradecida con los resultados, . Su trabajo nos ha
+            ayudado a crecer y atraer más clientes. ¡Los recomendaría sin
+            dudarlo!"
           </span>
         </div>
       </div>
       <div
         id="card"
-        className="bg-white w-[400px] h-[250px] m-auto p-5 text-black flex flex-col gap-3"
+        className="bg-white xs:w-[350px] xs:h-[250px] sm:w-[400px] m-auto p-5 text-black flex flex-col gap-3"
       >
         <div id="client" className="flex gap-3 items-center">
-          <span className="text-5xl">🙍🏻‍♂️</span>
+          <span className="text-5xl">👨🏻</span>
           <div id="client-info">
             <span className="text-2xl">Ruben Antonio</span>
             <hr color="#000" />
-            <p>Dueño de Galería </p>
+            <p>Dueño de Galería</p>
           </div>
         </div>
         <div id="testimony" className="flex items-center">
-          <span>
-            “Me encontraba con un problema y es que no sabia como administrar
-            mis productos, trate de la forma tradicional pero fue un desastre,
-            en ese momento descubrí las aplicaciones web y fue un cambio
-            extraordinario”
+          <span className="text-sm">
+            “Siempre me pedían catálogos y yo tenia que enviar foto por foto, y
+            cuando los conocí ellos me ofrecieron una pagina para tener todo mas
+            organizado y la verdad fue un cambio bastante importante para mi
+            negocio, muy bonitas las fotos, de buena calidad, recomendados”
           </span>
         </div>
       </div>
@@ -146,7 +150,7 @@ const CardsClients = (): RN => {
 
 const SuccessStories = (): RN => {
   return (
-    <section className="w-full h-[90vh] mt-20">
+    <section className="w-full h-auto my-20">
       <SuccessInformationThatConverts />
       <CardsClients />
     </section>

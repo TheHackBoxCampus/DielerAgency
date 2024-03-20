@@ -6,6 +6,7 @@ import { buttonCTATypeStyles, buttonCTATypeText  } from "../../types/buttonCTA.t
 interface ButtonCTA { 
     styles: buttonCTATypeStyles, 
     text: buttonCTATypeText,
+    to?: string
 }
 
 export { ButtonCTA }

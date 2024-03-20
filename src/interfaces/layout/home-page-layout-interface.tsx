@@ -4,4 +4,4 @@ interface HomePageLayout {
     children: RN
 }
 
-export default HomePageLayout; 
+export { HomePageLayout }; 

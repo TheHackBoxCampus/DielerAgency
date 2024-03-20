@@ -23,7 +23,9 @@ const Question: React.FC<Question> = ({ title, children }) => {
       onClick={toggleAccordion}
     >
       <div className="flex justify-between">
-        <span className="text-3xl font-bold">{title}</span>
+        <span className="xs:text-xl sm:text-2xl md:text-3xl font-bold">
+          {title}
+        </span>
         {isOpen ? (
           <img src="/icons/arrow-right.svg" alt="icon" className="w-[30px]" />
         ) : (
@@ -38,33 +40,46 @@ const Question: React.FC<Question> = ({ title, children }) => {
 
 const FrequentQuestions = (): RN => {
   return (
-    <div className="w-full flex flex-col gap-5 h-[80vh] ">
-      <h3 className="text-3xl w-2/4 text-center my-10 font-bold m-auto">
+    <div className="w-full flex flex-col gap-5 my-20">
+      <h3 className="xs:w-full xs:text-2xl sm:text-3xl lg:w-2/4 text-center my-10 font-bold m-auto">
         ¿TIENES ALGUNA PREGUNTA? SI ES ASI PUEDES REVISAR LAS PREGUNTAS QUE HACE
         LA GENTE
       </h3>
       <Question title="¿Cuando empiezo a ver resultados?">
         <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
-          totam?
+          Depende de cual sea la estrategia que usemos en tu caso, no es lo
+          mismo una estrategia integral estructurada a corto, mediano y largo
+          plazo, a una estrategia de SEO o de contenidos para redes sociales que
+          suelen verse resultados más rápidos.
         </span>
       </Question>
       <Question title="¿Por qué confiar en Dieler.Agency?">
         <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
-          totam?
+          Contamos las herramientas profesionales y con un equipo de expertos
+          íntegros que se sigue desarrollando día a día, pero lo más importante
+          es nuestro enfoque en los resultados y te brindamos garantías por
+          contrato (dependiendo de tú caso)
         </span>
       </Question>
-      <Question title="¿Por qué necesito  una agencia para crecer?">
+      <Question title="¿Por qué necesito una agencia para crecer?">
         <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
-          totam?
+          Si bien una agencia no es la prioridad más importante de tu negocio,
+          puede ser un excelente aliado en la mayoría de los casos para
+          permitirte a ti como dueño de negocio tener; más libertad, mayores
+          resultados y un constante desarrollo.
         </span>
       </Question>
-      <Question title="¿Qué es mejor entre un Grotwh Partner o un PartnerGreen? ">
+      <Question title="¿Cuál es la diferencia entre Dieler Partner y el Método Dieler?">
         <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
-          totam?
+          En nuestro método desarrollamos una visión general y a largo plazo,
+          nos entregamos por completo 1 a 1 al crecimiento de tu negocio
+          desarrollando los 7 pilares de los que se compone el método,
+          asegurándote un sistema que le permita a tu negocio crecer en el
+          tiempo, abarcando un aspecto general de la empresa y principalmente la
+          facturación, procesos, recursos y equipo, mientras que nuestro Dieler
+          Partner es un socio, enfocado netamente a la conversión de tu negocio,
+          desarrollando una visión especifica a corto y mediano plazo de las
+          cosas más importantes para aumentar las ventas.
         </span>
       </Question>
     </div>

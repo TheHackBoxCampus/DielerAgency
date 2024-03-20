@@ -29,7 +29,6 @@ const ArrowLeft: React.FC<any> = (props) => {
     <img
       {...props}
       style={{ ...arrowStyle }}
-      className="text-3xl"
       src="/icons/arrow-left.svg"
       alt="icon"
     />
@@ -47,7 +46,7 @@ const ArroRight: React.FC<any> = (props) => {
   );
 };
 
-const SliderComponent: React.FC<SliderProps> = ({ slides }) => {
+const SliderComponent: React.FC<SliderProps> = ({ slides, hook }) => {
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -58,7 +57,10 @@ const SliderComponent: React.FC<SliderProps> = ({ slides }) => {
     nextArrow: <ArroRight />,
   };
   return (
-    <Slider className="mt-10 flex items-center" {...sliderSettings}>
+    <Slider
+      className="mt-10" 
+      {...sliderSettings}
+    >
       {slides.map((slide, __index__) => (
         <div key={__index__}>{slide}</div>
       ))}
